@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import {Kitchen} from'./Component/Kitchen'
+import {Children} from'./Component/Children'
+import {Cabinet} from'./Component/Cabinet'
+import {Сorridor} from'./Component/Сorridor'
+import {Bathroom} from'./Component/Bathroom'
+import {Pantry} from'./Component/Pantry'
+import {Basement} from'./Component/Basement'
+import {Test} from'./Component/Test'
+import {Test1} from'./Component/Test1'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <main>
 
-export default App;
+	
+
+      <Kitchen />
+      <Children />
+      <Cabinet />
+      <Сorridor />
+      <Bathroom />
+      <Pantry/>
+      <Basement />
+    </main>
+  )
+}
