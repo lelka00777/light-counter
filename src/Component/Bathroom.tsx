@@ -22,7 +22,7 @@ function BathRoom (props:KyxPropsType)
   
 
   
-  const[value,setValue]=useState('')
+  const[value,setValue]=useState<any>('')
   
   
   const OnclickHandler = () => {   //удаление текста x

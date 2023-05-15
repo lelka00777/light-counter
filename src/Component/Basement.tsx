@@ -5,7 +5,7 @@ export function Basement() {
   
   return (  <div className="App">
   
-       <Basementroom /> 
+       <Basementroom  /> 
     
     </div>
   );
@@ -13,16 +13,16 @@ export function Basement() {
 
 
 export type KyxPropsType={
-  
+  value:any
 }
-function Basementroom (props:KyxPropsType) 
+function Basementroom (props:any) 
 
 {
   const [onClick, setonClick] = useState('');
   
 
   
-  const[value,setValue]=useState('')
+  const[value,setValue]=useState<any>('')
   
   
   const OnclickHandler = () => {   //удаление текста x
@@ -39,14 +39,14 @@ function Basementroom (props:KyxPropsType)
   };
 
 
-function sum(value: number) {
+function sum(value:any) {
       
       let kyx = 60;
-      let res = kyx * value;
+      let res:number|string = kyx * value;
       return res;
   }
 
-  let suma=sum(value);
+  let suma = sum(value);
 
   return (
     <div className="kyx">

@@ -15,14 +15,14 @@ export function Сorridor() {
 export type KyxPropsType={
   
 }
-function СorridorRoom (props:KyxPropsType) 
+function СorridorRoom (props:any) 
 
 {
   const [onClick, setonClick] = useState('');
   
 
   
-  const[value,setValue]=useState('')
+  const[value,setValue]=useState<any>('')
   
   
   const OnclickHandler = () => {   //удаление текста x
@@ -40,14 +40,14 @@ function СorridorRoom (props:KyxPropsType)
   };
 
 
-function sum(value: number) {
+function sum(value:any) {
       
       let kyx = 50;
       let res = kyx * value;
       return res;
   }
 
-  let suma=sum(value);
+  let suma = sum(value);
 
   return (
     <div className="kyx">

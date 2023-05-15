@@ -15,14 +15,14 @@ export function Children() {
 export type KyxPropsType={
   
 }
-function ChildrenRoom(props:KyxPropsType) 
+function ChildrenRoom(props:any) 
 
 {
   const [onClick, setonClick] = useState('');
   
 
   
-  const[value,setValue]=useState('')
+  const[value,setValue]=useState<any>('')
   
   
   const OnclickHandler = () => {   //удаление текста x

@@ -15,14 +15,14 @@ export function Cabinet() {
 export type KyxPropsType={
   
 }
-function CabinetRoom(props:KyxPropsType) 
+function CabinetRoom(props:any) 
 
 {
   const [onClick, setonClick] = useState('');
   
 
   
-  const[value,setValue]=useState('')
+  const[value,setValue]=useState<any>('')
   
   
   const OnclickHandler = () => {   //удаление текста x

@@ -15,14 +15,14 @@ export function Pantry() {
 export type KyxPropsType={
   
 }
-function Pantryroom (props:KyxPropsType) 
+function Pantryroom (props:any) 
 
 {
   const [onClick, setonClick] = useState('');
   
 
   
-  const[value,setValue]=useState('')
+  const[value,setValue]=useState<any>('')
   
   
   const OnclickHandler = () => {   //удаление текста x
