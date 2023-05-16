@@ -3,15 +3,18 @@ import React, { useState } from "react";
 export function Kitchen() {
   return (
     <div className="App">
-      <Kyx />
+      <Kyx value={""} />
     </div>
   );
 }
+type KyxPropsType={
+  value:string|number
+}
 
-function Kyx(props: any) {
 
-  const [onClick, setonClick] = useState("");
-  const [value, setValue] = useState<any>("");
+function Kyx(props: KyxPropsType) {
+
+  const [value, setValue] = useState("");
 
   const OnclickHandler = () => {
     //удаление текста x
@@ -31,17 +34,16 @@ function Kyx(props: any) {
   //   }
 
   function sum(value: any) {
-  
     return !isNaN(value) ? value * 150 : setValue("");
   }
-  let suma:any = sum(value);
+  let suma: any = sum(value);
 
   return (
     <div className="kyx">
       <h2>Кухня, столовая, спальня, гостиная 🍽️🏺🍷🛏️</h2>
       <div>
         <input
-          // type={"text"}
+      
           type="number"
           placeholder="КВ ✅  "
           onChange={handleChange}

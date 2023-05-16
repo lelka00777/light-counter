@@ -15,11 +15,7 @@ export default function App() {
       <Bathroom />
       <Cabinet />
       <Basement />
-      
-      
-      
-      
-      <Pantry/>
+      <Pantry />
     </main>
   );
 }
