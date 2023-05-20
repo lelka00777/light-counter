@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/light-counter/static/css/main.7989dcf5.css",
-    "main.js": "/light-counter/static/js/main.1d5e9240.js",
+    "main.js": "/light-counter/static/js/main.e3902ed8.js",
     "index.html": "/light-counter/index.html",
     "main.7989dcf5.css.map": "/light-counter/static/css/main.7989dcf5.css.map",
-    "main.1d5e9240.js.map": "/light-counter/static/js/main.1d5e9240.js.map"
+    "main.e3902ed8.js.map": "/light-counter/static/js/main.e3902ed8.js.map"
   },
   "entrypoints": [
     "static/css/main.7989dcf5.css",
-    "static/js/main.1d5e9240.js"
+    "static/js/main.e3902ed8.js"
   ]
 }
